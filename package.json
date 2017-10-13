@@ -1,0 +1,25 @@
+{
+  "name": "weekendAssignment2",
+  "version": "1.0.0",
+  "description": "[ ] Create files and folders [ ] Build out basic client side HTML [ ] Get server running [ ] Build out back-end logic to compute numbers in 1 of 4 ways. [ ] Construct response of server [ ] Construct a clear button [ ] Hard mode: Add buttons into input fields [ ] Keep historical record of all math operations on the server. Display a list of previous calculations when it loads.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blaze90809/WeekendAssignment2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blaze90809/WeekendAssignment2/issues"
+  },
+  "homepage": "https://github.com/Blaze90809/WeekendAssignment2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
