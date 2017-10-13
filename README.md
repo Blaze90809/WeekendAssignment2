@@ -2,7 +2,7 @@
 
 [x] Create files and folders
 [x] Get server running
-[ ] Build out basic client side HTML
+[ ] Build out basic client-side HTML
 [ ] Build out back-end logic to compute numbers in 1 of 4 ways.
 [ ] Construct response of server
 [ ] Construct a clear button
