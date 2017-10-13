@@ -11,4 +11,8 @@ app.listen(port, function(){
     console.log('listening on port', port);
 });
 
+app.post("/numbersin", function(req, res){
+console.log(req.body);
+});
 
+app.post('/answer', )
