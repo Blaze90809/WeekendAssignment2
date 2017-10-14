@@ -5,6 +5,20 @@ console.log('Hello World');
 $('#submit').on('click', submitData);
 $('.type').on('click', 'button', inputType)
 
+
+}
+var type;
+function inputType(){
+type = $(this).data('method');
+return type;
+}
+
+// var x;
+// var y;
+function submitData(){
+var x = $('#inputOne').val();
+var y = $('#inputTwo').val();
+
 $.ajax({
     method: "POST",
     url: "/numbersin",
@@ -15,20 +29,4 @@ $.ajax({
     }
 });
 }
-
-
-var x;
-var y;
-function submitData(){
-x = $('#inputOne').val();
-y = $('#inputTwo').val();
-return x;
-return y;
-}
-
-var type;
-function inputType(){
-type = $(this).data('method');
-return type;
-}
-
+app.get(/)
