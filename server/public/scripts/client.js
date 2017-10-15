@@ -54,6 +54,6 @@ function appendMathAnswer(answer){
 };
 
 function clearFunction(){
-    $('.Input-field').html('<input type="text" id="inputOne">Input field one </input><input type="text" id="inputTwo">Input field two</input><br>');
+    $('.Input-field').html('<input type="text" id="inputOne"><h3>First Number</h3></input><input type="text" id="inputTwo"><h3>Second Number</h3></input><br>');
     $('#answer').html("<div id='answer'><h2>Your Answer:</h2></div>");
 }
