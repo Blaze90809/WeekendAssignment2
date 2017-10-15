@@ -1,11 +1,9 @@
 $(document).ready(readyNow)
 
 function readyNow(){
-console.log('Hello World');
 $('#submit').on('click', submitData);
 $('.type').on('click', 'button', inputType)
-
-
+$('#clear').on('click', clearFunction)
 }
 var type;
 function inputType(){
@@ -51,6 +49,11 @@ console.log('error response: ', msg, status)
 function appendMathAnswer(answer){
     answer = parseInt(answer.answer);
     $('#answer').empty();
-    $('#answer').html('<p>' + 'answer: ' + answer + '</p>');
-    console.log('<p>' + 'answer: ' + answer + '</p>');
+    $('#answer').html('<h2>Your Answer: ' + answer + '</h2>');
+    console.log('Your Answer: ' + answer);
 };
+
+function clearFunction(){
+    $('.Input-field').html('<input type="text" id="inputOne">Input field one </input><input type="text" id="inputTwo">Input field two</input><br>');
+    $('#answer').html("<div id='answer'><h2>Your Answer:</h2></div>");
+}
