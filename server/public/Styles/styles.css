@@ -1,0 +1,38 @@
+html, h1, h3 {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  h2 {
+    margin: 10px;
+    padding: 0;
+    font-size: 20px;
+  }
+  p {
+    font-size: 10px;
+  }
+
+  header {
+    background-color: #385EA6;
+    color: black;
+    text-align: center;
+    font-size: 38px;
+    padding-top: 0px;
+    padding-right: 32px;
+    padding-bottom: 0px;
+    padding-left: 32px;
+    max-width: 900px;
+    float: left;
+    display: block;
+    margin: 0px auto;
+  }
+  input {
+    margin: 10px;
+  }
+  button { 
+    margin: 10px;
+  }
+
+  body {
+background-color: lightblue;
+  }

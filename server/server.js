@@ -51,10 +51,8 @@ function mathCalculation(){
        console.log('multiply answer:' + answer);
        return answer;
    }
-   
     
 }
-
 
 app.get('/respondcalc', function (req, res){
     mathCalculation();
