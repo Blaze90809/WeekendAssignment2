@@ -19,7 +19,7 @@ var y = $('#inputTwo').val();
 
 $.ajax({
     method: "POST",
-    url: "/numbersin",
+    url: '/numbersin',
     data: {
         number1: x,
         number2: y,
@@ -35,7 +35,7 @@ $.ajax({
 function getMathAnswer() {
     $.ajax({
         method: 'GET',
-        url: '/respondcalc'
+        url: '/numbersin'
     })
     .done(function(response) {
         console.log('successful response:' + response);
