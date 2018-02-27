@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="bootstrap" href="vendors/bootstrap.min.js">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="vendors/jquery.min.js"></script>
     <script src="scripts/client.js"></script>
     <title>Basic calculator</title>
 </head>
+
 <body>
     <header>
-    <h1>Basic calculator</h1>
-</header>
-<div class="Input-field">
-    <input type="text" id="inputOne"><h3>First Number</h3></input>
-    <input type="text" id="inputTwo"><h3>Second Number</h3></input><br>
-</div>
-<div class='type'>
-    <button id="add" data-method='add'>Add</button>
-    <button id="subtract" data-method='subtract'>Subtract</button>
-    <button id="divide" data-method='divide'>Divide</button>
-    <button id="multiply" data-method='multiply'>Multiply</button><br>
-    <button id="clear">Clear</button>
-</div>
-    <button id="submit">Submit</button>
-</div>
-    <div id="answer"><h2>Your Answer:</h2></div>
+        <h1>Basic calculator</h1>
+    </header>
+    <div class="Input-field">
+        <input type="text" id="inputOne">
+        <h3>First Number</h3>
+        </input>
+        <input type="text" id="inputTwo">
+        <h3>Second Number</h3>
+        </input>
+        <br>
+    </div>
+    <div class="calculator">
+        <div class='row'>
+            <div class="col-xs-2">
+                <div class="num-button">
+                    <button id="seven" data-method='7' class='num-button'>7</button>
+                    <button id="eight" data-method='8' class='num-button'>8</button>
+                    <button id="nine" data-method='9' class='num-button'>9</button>
+                </div>
+                <div class="type">
+                    <button id="divide" data-method='/' class='num-button'>/</button>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col-xs-2">
+                <div class="num-button">
+                    <button id="four" data-method='4' class='num-button'>4</button>
+                    <button id="five" data-method='5' class='num-button'>5</button>
+                    <button id="six" data-method='6' class='num-button'>6</button>
+                </div>
+                <div class="type">
+                    <button id="multiply" data-method='*'>*</button>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col-xs-2">
+                <div class="num-button">
+                    <button id="one" data-method='1' class='num-button'>1</button>
+                    <button id="two" data-method='2' class='num-button'>2</button>
+                    <button id="three" data-method='3' class='num-button'>3</button>
+                </div>
+                <div class="type">
+                    <button id="subtract" data-method='-'>-</button>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col-xs-2">
+                <div class="num-button">
+                    <button id="zero" data-method='0' class='num-button'>0</button>
+                    <button id="decimal" data-method='.' class='num-button'>.</button>
+                </div>
+                <div class="type">
+                    <button id="submit">=</button>
+                    <button id="add" data-method='+'>+</button>
+                    <button id="clear">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="answer">
+        <h2>Your Answer:</h2>
+    </div>
 </body>
+
 </html>

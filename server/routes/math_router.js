@@ -12,30 +12,28 @@ res.sendStatus(201);
 console.log('number 1 is: ' + x);
 console.log('number 2 is: ' + y);
 console.log('the type is: ' + type);
-return x;
-return y;
-return type;
+
 });
 
 var answer;
 function mathCalculation(){
     console.log('math function');
-   if (type === 'add'){
+   if (type === '+'){
    answer = x + y;
    console.log('add answer:' + answer);
    return answer;
    }
-   else if (type === 'subtract'){
+   else if (type === '-'){
    answer = x - y;
    console.log('subtract answer:' + answer);
    return answer;
    }
-   else if (type === 'divide'){
+   else if (type === '/'){
        answer = x / y;
        console.log('divide answer:' + answer);
        return answer;
    }
-   else if (type === 'multiply'){
+   else if (type === '*'){
        answer = x * y;
        console.log('multiply answer:' + answer);
        return answer;
