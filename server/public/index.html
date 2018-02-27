@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="styles/styles.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="vendors/jquery.min.js"></script>    
+    <script src="vendors/jquery.min.js"></script>
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <script src="scripts/client.js"></script>
     <title>Basic calculator</title>
@@ -15,65 +15,77 @@
 
 <body>
     <div class="jumbotron">
-        <h1>Basic calculator</h1>
+        <h1>Basic Calculator</h1>
+        <h3>Calculate Two Numbers</h3>
     </div>
     <div class="container">
-        <input type="text" id="inputOne">
-        </input>
-        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" id="inputOne">
+            </div>
+            </input>
+        </div>
         <div class="calculator">
             <div class='row'>
-                <div class="num-button col">
-                    <button id="seven" data-method='7' class='btn btn-primary'>7</button>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="seven" data-method='7'>7</button>
                 </div>
-                <div class="num-button col">
-                    <button id="eight" data-method='8' class='btn btn-primary'>8</button>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="eight" data-method='8'>8</button>
                 </div>
-                <div class="num-button col">
-                    <button id="nine" data-method='9' class='btn btn-primary'>9</button>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="nine" data-method='9'>9</button>
                 </div>
 
-                <div class="type col">
-                    <button id="divide" data-method='/' class='num-button'>/</button>
+                <div class="type col-sm-3">
+                    <button class="btn btn-primary btn-block" id="divide" data-method='/'>/</button>
                 </div>
             </div>
             <div class='row'>
-                <div class="col-xs-2">
-                    <div class="num-button">
-                        <button id="four" data-method='4' class='num-button'>4</button>
-                        <button id="five" data-method='5' class='num-button'>5</button>
-                        <button id="six" data-method='6' class='num-button'>6</button>
-                    </div>
-                    <div class="type">
-                        <button id="multiply" data-method='*'>*</button>
-                    </div>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="four" data-method='4' class='num-button'>4</button>
                 </div>
-            </div>
-            <div class='col-xs-2'>
-                <div class="num-button">
-                    <button id="one" data-method='1' class='num-button'>1</button>
-                    <button id="two" data-method='2' class='num-button'>2</button>
-                    <button id="three" data-method='3' class='num-button'>3</button>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="five" data-method='5' class='num-button'>5</button>
                 </div>
-                <div class="type">
-                    <button id="subtract" data-method='-'>-</button>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="six" data-method='6' class='num-button'>6</button>
+                </div>
+                <div class="type col-sm-3">
+                    <button class="btn btn-primary btn-block" id="multiply" data-method='*'>*</button>
                 </div>
             </div>
             <div class='row'>
-                <div class="col-xs-2">
-                    <div class="num-button">
-                        <button id="zero" data-method='0' class='num-button'>0</button>
-                        <button id="decimal" data-method='.' class='num-button'>.</button>
-                    </div>
-                    <div class="type">
-                        <button id="submit">=</button>
-                        <button id="add" data-method='+'>+</button>
-                        <button id="clear">Clear</button>
-                    </div>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="one" data-method='1' class='num-button'>1</button>
+                </div>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="two" data-method='2' class='num-button'>2</button>
+                </div>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="three" data-method='3' class='num-button'>3</button>
+                </div>
+                <div class="type col-sm-3">
+                    <button class="btn btn-primary btn-block" id="subtract" data-method='-'>-</button>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="num-button col-sm-3">
+                    <button class="btn btn-primary btn-block" id="zero" data-method='0' class='num-button'>0</button>
+                </div>
+                <div class="type col-sm-3">
+                    <button class="btn btn-success btn-block" id="submit">=</button>
+                </div>
+                <div class="type col-sm-3">
+                    <button class="btn btn-primary btn-block" id="add" data-method='+'>+</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-warning btn-block" id="clear">C</button>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
