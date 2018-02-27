@@ -20,21 +20,23 @@ function addInput() {
     $('#inputOne').val(inputOne);
 }
 else {
+    // $('#inputOne').val()
     inputTwo += value;
     console.log(inputTwo)
-    $('#inputTwo').val(inputTwo);
+    $('#inputOne').val(inputTwo);
 }
 }
 
 function inputType() {
+    $('#inputOne').val('');
     type = $(this).data('method');
     secondInput = true;
     return type;
 }
 
 function submitData() {
-    var x = $('#inputOne').val();
-    var y = $('#inputTwo').val();
+    var x = inputOne;
+    var y = inputTwo;
 
     $.ajax({
         method: "POST",
@@ -67,14 +69,14 @@ function getMathAnswer() {
 }
 function appendMathAnswer(answer) {
     answer = parseInt(answer.answer);
-    $('#answer').empty();
-    $('#answer').html('<h2>Your Answer: ' + answer + '</h2>');
+    $('#inputOne').val(answer);
     console.log('Your Answer: ' + answer);
 };
 
 function clearFunction() {
-    $('.Input-field').html('<input type="text" id="inputOne"><h3>First Number</h3></input><input type="text" id="inputTwo"><h3>Second Number</h3></input><br>');
+    $('.Input-field').html('<input type="text" id="inputOne"></input><br>');
     $('#answer').html("<div id='answer'><h2>Your Answer:</h2></div>");
+    $('#inputOne').val('')
     secondInput = false;
     inputOne = '';
     inputTwo = '';
